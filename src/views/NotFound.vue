@@ -4,7 +4,6 @@
     <div>
       <router-link to="/">返回首页</router-link>
       <hr/>
-      <a href="/">也是返回首页</a>
     </div>
   </div>
 </template>

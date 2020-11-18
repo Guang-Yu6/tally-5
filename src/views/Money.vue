@@ -1,7 +1,7 @@
 <template>
   <div>
     <Layout>
-      <p>你好</p>
+      <p>金钱主页</p>
     </Layout>
   </div>
 </template>
