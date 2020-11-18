@@ -1,7 +1,7 @@
 <template>
-<div>标签页
-<Nav/>
-</div>
+<Layout>
+  标签页.vue
+</Layout>
 </template>
 
 <script lang="ts">
