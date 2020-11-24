@@ -12,7 +12,7 @@
 
 <script lang="ts">
   import  Vue from 'vue'
-  import {Component, Prop} from 'vue-property-decorator';  // 装饰器
+  import {Component} from 'vue-property-decorator';  // 装饰器
 
   @Component
   export default class Types extends Vue {
