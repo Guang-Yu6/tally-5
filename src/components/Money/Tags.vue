@@ -1,7 +1,7 @@
 <template>
   <div class="tags">
     <div class="new">
-      <button>新增标签</button>
+      <button @click="create">新增标签</button>
     </div>
     <ul class="current">
       <li v-for="tag in dataSource" :key="tag"
@@ -31,6 +31,17 @@
         this.selectedTags.push(tag)
       }
     }
+
+    create(){
+      const name = window.prompt('请输入标签名');
+      if (name === '') {
+        window.alert('标签属性不能为空');
+      } else if (this.dataSource){  //如果这个dataSource存在
+          this.$emit('update:dataSource',  // 如果你填了一个name 且不为空，我就把请求告诉外部
+              [...this.dataSource, name]);
+        }
+    }
+
   }
 </script>
 
